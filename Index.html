@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FREE TIME GAMING | Free Fire Sensitivity</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo-container">
+            <img src="logo.png" alt="GWD PIRATES Logo" class="logo-img" onerror="this.style.display='none'">
+            <h1>FREE TIME GAMING</h1>
+        </div>
+        <div class="socials">
+    <a href="https://youtube.com/@gwd_pirates?si=F-tpd73UO4TtinXE" target="_blank">YouTube</a>
+    
+    <a href="https://www.instagram.com/gwd_pirates?igsh=NzN3MXdhbjljeGd0" target="_blank">Instagram</a>
+</div>
+    </nav>
+
+    <header class="hero">
+        <h2>Dominate Every Match</h2>
+        <p>Get the perfect Free Fire headshot sensitivity for your specific device, or upgrade to our premium VIP settings!</p>
+    </header>
+
+    <section class="free-tool" id="free-sensi">
+        <h3>🔥 Find Perfect Sensitivity</h3>
+        <p>Apne phone ka brand aur model daalein aur auto-generated best settings paayein.</p>
+        
+        <div class="input-group">
+            <select id="phone-brand">
+                <option value="" disabled selected>Select Phone Brand</option>
+                <option value="Apple">Apple (iPhone)</option>
+                <option value="Samsung">Samsung</option>
+                <option value="Xiaomi">Xiaomi / Poco / Redmi</option>
+                <option value="Vivo">Vivo / iQOO</option>
+                <option value="Oppo">Oppo</option>
+                <option value="Realme">Realme</option>
+                <option value="OnePlus">OnePlus</option>
+                <option value="Other">Other Android</option>
+            </select>
+            <input type="text" id="phone-model" placeholder="Enter Model (e.g. iPhone 13, Poco X3)">
+            <button onclick="generateSensitivity()" class="btn-primary">Get Settings</button>
+        </div>
+
+        <div id="result-card" class="hidden">
+            <h4>Your Custom Settings</h4>
+            <div class="sensi-grid">
+                <div class="sensi-item"><span>General:</span> <strong id="gen-val">0</strong></div>
+                <div class="sensi-item"><span>Red Dot:</span> <strong id="red-val">0</strong></div>
+                <div class="sensi-item"><span>2x Scope:</span> <strong id="2x-val">0</strong></div>
+                <div class="sensi-item"><span>4x Scope:</span> <strong id="4x-val">0</strong></div>
+                <div class="sensi-item"><span>Sniper Scope:</span> <strong id="sniper-val">0</strong></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="premium-section" id="premium">
+        <h3>💎 VIP Pro Sensitivity</h3>
+        <p>100% Headshot Rate. Secret settings used by top tier eSports players.</p>
+        
+        <div class="pricing-cards">
+            <div class="card">
+                <h4>Android Premium</h4>
+                <div class="price">
+                    <span class="old-price">₹99/-</span>
+                    <span class="new-price">₹49/-</span>
+                </div>
+                <ul class="features">
+                    <li>Perfect for all Android devices</li>
+                    <li>Zero Recoil Settings</li>
+                    <li>Fast Drag Headshot</li>
+                </ul>
+                <a href="https://rzp.io/rzp/AAAICsF0" class="btn-buy" target="_blank">Buy Now</a>
+            </div>
+
+            <div class="card">
+                <h4>iPhone Premium</h4>
+                <div class="price">
+                    <span class="old-price">₹99/-</span>
+                    <span class="new-price">₹49/-</span>
+                </div>
+                <ul class="features">
+                    <li>Optimized for iOS smooth touch</li>
+                    <li>One-Tap Headshot Sensi</li>
+                    <li>Sniper God Settings</li>
+                </ul>
+                <a href="https://rzp.io/rzp/AAAICsF0" class="btn-buy" target="_blank">Buy Now</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 FREE TIME GAMING. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
