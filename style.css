@@ -1,0 +1,280 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #0f0f13;
+	color: #ffffff;
+	font-family: "Poppins", sans-serif;
+}
+/* Typography & Colors */
+h1,
+h2,
+h3,
+h4 {
+	font-family: "Teko", sans-serif;
+	text-transform: uppercase;
+}
+
+.text-accent {
+	color: #ff3c00;
+}
+/* Navbar */
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 5%;
+	background: #18181d;
+	border-bottom: 2px solid #ff3c00;
+}
+
+.logo-container {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.logo-img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+nav h1 {
+	font-size: 28px;
+	color: #ff3c00;
+	letter-spacing: 2px;
+}
+
+.socials a {
+	color: white;
+	text-decoration: none;
+	margin-left: 15px;
+	font-size: 14px;
+	transition: 0.3s;
+}
+
+.socials a:hover {
+	color: #ff3c00;
+}
+/* Hero Section */
+.hero {
+	text-align: center;
+	padding: 60px 20px;
+	background: linear-gradient(180deg, #18181d 0%, #0f0f13 100%);
+}
+
+.hero h2 {
+	font-size: 48px;
+	margin-bottom: 10px;
+}
+
+.hero p {
+	color: #aaaaaa;
+	max-width: 600px;
+	margin: auto;
+}
+/* Free Tool Section */
+.free-tool {
+	text-align: center;
+	padding: 40px 20px;
+}
+
+.free-tool h3 {
+	font-size: 36px;
+	color: #ff3c00;
+}
+
+.input-group {
+	margin-top: 25px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 15px;
+}
+
+input,
+select {
+	padding: 12px;
+	border: 1px solid #333;
+	background: #18181d;
+	color: white;
+	border-radius: 5px;
+	outline: none;
+	font-family: "Poppins", sans-serif;
+	width: 250px;
+}
+
+.btn-primary,
+.btn-buy {
+	background: #ff3c00;
+	color: white;
+	border: none;
+	padding: 12px 30px;
+	border-radius: 5px;
+	font-weight: 600;
+	cursor: pointer;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.btn-primary:hover,
+.btn-buy:hover {
+	background: #e03500;
+	transform: translatey(-2px);
+}
+/* Result Card */
+.hidden {
+	display: none !important;
+}
+
+#result-card {
+	background: #18181d;
+	border: 1px solid #ff3c00;
+	max-width: 400px;
+	margin: 30px auto;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 15px rgba(255, 60, 0, 0.2);
+}
+
+#result-card h4 {
+	font-size: 24px;
+	margin-bottom: 15px;
+}
+
+.sensi-item {
+	display: flex;
+	justify-content: space-between;
+	background: #22222a;
+	padding: 10px 15px;
+	margin-bottom: 8px;
+	border-radius: 5px;
+}
+
+.sensi-item strong {
+	color: #ffc107;
+}
+/* Premium Section */
+.premium-section {
+	padding: 60px 5%;
+	text-align: center;
+	background: #121216;
+}
+
+.premium-section h3 {
+	font-size: 36px;
+	color: #00d2ff;
+}
+
+.pricing-cards {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	flex-wrap: wrap;
+	margin-top: 30px;
+}
+
+.card {
+	background: #18181d;
+	padding: 30px;
+	border-radius: 10px;
+	width: 300px;
+	border: 1px solid #333;
+	transition: 0.3s;
+}
+
+.card:hover {
+	border-color: #00d2ff;
+	transform: translatey(-5px);
+}
+
+.card h4 {
+	font-size: 28px;
+	margin-bottom: 15px;
+}
+
+.price {
+	margin-bottom: 20px;
+}
+
+.old-price {
+	text-decoration: line-through;
+	color: #777;
+	font-size: 18px;
+	margin-right: 10px;
+}
+
+.new-price {
+	font-size: 36px;
+	font-weight: bold;
+	color: #00ea8d;
+}
+
+.features {
+	list-style: none;
+	margin-bottom: 25px;
+	text-align: left;
+}
+
+.features li {
+	margin-bottom: 10px;
+	color: #ccc;
+	font-size: 14px;
+}
+
+.features li::before {
+	content: "✔️ ";
+	color: #00ea8d;
+}
+/* Footer */
+footer {
+	text-align: center;
+	padding: 20px;
+	background: #0a0a0c;
+	font-size: 12px;
+	color: #666;
+}
+
+@font-face {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+	src: url("https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLDz8V1s.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url("https://fonts.gstatic.com/s/poppins/v24/pxiEyp8kv8JHgFVrFJA.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: url("https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLEj6V1s.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Teko";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url("https://fonts.gstatic.com/s/teko/v23/LYjYdG7kmE0gV69VVPPdFl06VN8XG7Sy.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Teko";
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: url("https://fonts.gstatic.com/s/teko/v23/LYjYdG7kmE0gV69VVPPdFl06VN_JHLSy.ttf") format("truetype");
+  }
